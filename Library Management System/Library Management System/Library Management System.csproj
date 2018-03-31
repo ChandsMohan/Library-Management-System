@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81DFFB2A-79BC-4334-B383-023133C7A79E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library_Management_System</RootNamespace>
+    <AssemblyName>Library Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Access, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="encrypter.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmaddnewbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddnewbook.Designer.cs">
+      <DependentUpon>frmaddnewbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadminlogin.Designer.cs">
+      <DependentUpon>frmadminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookInformation.Designer.cs">
+      <DependentUpon>frmBookInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookissuedReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookissuedReturn.Designer.cs">
+      <DependentUpon>frmBookissuedReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbookissuedtostudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbookissuedtostudent.Designer.cs">
+      <DependentUpon>frmbookissuedtostudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdeleteBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdeleteBook.Designer.cs">
+      <DependentUpon>frmdeleteBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDIParent.Designer.cs">
+      <DependentUpon>frmMDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrecordsBookIssued.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrecordsBookIssued.Designer.cs">
+      <DependentUpon>frmrecordsBookIssued.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmreturnbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreturnbook.Designer.cs">
+      <DependentUpon>frmreturnbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsearchbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsearchbook.Designer.cs">
+      <DependentUpon>frmsearchbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmupdatebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmupdatebook.Designer.cs">
+      <DependentUpon>frmupdatebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddnewbook.resx">
+      <DependentUpon>frmaddnewbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadminlogin.resx">
+      <DependentUpon>frmadminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookInformation.resx">
+      <DependentUpon>frmBookInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookissuedReturn.resx">
+      <DependentUpon>frmBookissuedReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbookissuedtostudent.resx">
+      <DependentUpon>frmbookissuedtostudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdeleteBook.resx">
+      <DependentUpon>frmdeleteBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDIParent.resx">
+      <DependentUpon>frmMDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrecordsBookIssued.resx">
+      <DependentUpon>frmrecordsBookIssued.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreturnbook.resx">
+      <DependentUpon>frmreturnbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsearchbook.resx">
+      <DependentUpon>frmsearchbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmupdatebook.resx">
+      <DependentUpon>frmupdatebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
